@@ -163,14 +163,12 @@ svg * {
 
 body {
   height: 100vh;
-  justify-content: center;
-  align-items: center;
   background-image: url("../images/bg.png");
 }
 
 .header {
   height: 148px;
-  width: 1920px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +200,6 @@ body {
   border-radius: 20px;
   margin-left: 335px;
   margin-right: 335px;
-  width: 1250px;
   height: 700px;
   background: rgba(27, 25, 17, 0.7);
 }
