@@ -161,4 +161,146 @@ svg * {
   --container-width: 1250px;
 }
 
+body {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg.png");
+}
+
+.header {
+  height: 148px;
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 33px;
+}
+
+.header_logo {
+  display: inline-flex;
+  align-content: center;
+  gap: 10px;
+}
+
+.header_logo .light {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 65px;
+  color: #f2efe6;
+}
+
+.header_logo .dark {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 65px;
+  color: #1b1911;
+}
+
+.main_container {
+  display: flex;
+  border-radius: 20px;
+  margin-left: 335px;
+  margin-right: 335px;
+  width: 1250px;
+  height: 700px;
+  background: rgba(27, 25, 17, 0.7);
+}
+
+.todo-container {
+  margin-left: 52px;
+  margin-top: 20px;
+}
+
+.todo-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #F2EFE6;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 0 10px;
+  border: 1px solid var(--color-accent); /* Изменено */
+  border-radius: 6px; /* Изменено */
+  outline: none;
+  background: rgba(27, 25, 17, 0.2);
+  color: #fff;
+  font-size: 1em;
+  width: 345px; /* Изменено */
+  height: 30px; /* Изменено */
+}
+
+.input-container input::placeholder {
+  color: rgba(242, 239, 230, 0.5);
+}
+
+.input-container .add-btn {
+  background-color: var(--color-accent);
+  border: none;
+  color: var(--color-dark);
+  font-size: 1.5em;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-list input[type=checkbox] {
+  display: none;
+}
+
+.task-list label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #F2EFE6;
+}
+
+.task-list label::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--color-accent);
+  border-radius: 5px;
+  margin-right: 10px;
+  background: rgba(27, 25, 17, 0.2);
+}
+
+.task-list input[type=checkbox]:checked + label::before {
+  background-color: var(--color-accent);
+  background-image: url("../../icons/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.task-list label.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
 /*# sourceMappingURL=styles.css.map */

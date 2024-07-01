@@ -1,0 +1,28 @@
+.header {
+  height: 148px;
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 33px;
+}
+
+.header_logo {
+  display: inline-flex;
+  align-content: center;
+  gap: 10px;
+}
+
+.header_logo .light {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 65px;
+  color: #f2efe6;
+}
+
+.header_logo .dark {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 65px;
+  color: #1b1911;
+}
